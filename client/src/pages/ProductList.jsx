@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
-import Announcement from "../components/Announcement";
+import Navbar from "../components/navbar";
+import Announcement from "../components/announcement";
 import Products from "../components/Products";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+import Newsletter from "../components/newsletter";
+import Footer from "../components/footer";
 import { mobile } from "../responsive";
 import { useLocation } from "react-router";
 import { useState } from "react";
