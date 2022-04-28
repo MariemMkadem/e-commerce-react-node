@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import Product from "./Product";
 import axios from "axios";
+import  {ProductsContainer} from './ProductWrapper';
 
-const Container = styled.div`
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
 
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
@@ -56,13 +50,13 @@ const Products = ({ cat, filters, sort }) => {
   }, [sort]);
 
   return (
-    <Container>
+    <ProductsContainer>
       {cat
         ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
         : products
             .slice(0, 8)
             .map((item) => <Product item={item} key={item.id} />)}
-    </Container>
+    </ProductsContainer>
   );
 };
 

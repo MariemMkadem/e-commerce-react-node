@@ -4,7 +4,7 @@ import Categories from "../components/categories/Categories";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Newsletter from "../components/newsletter";
-import Products from "../components/Products";
+import Products from "../components/product/Products";
 import Slider from "../components/slider";
 
 const Home = () => {

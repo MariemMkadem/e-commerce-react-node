@@ -4,7 +4,6 @@ import { sliderItems } from "../../data";
 import {Container, Arrow, InfoContainer, Title, Wrapper, Slide, Button, Desc, Image, ImgContainer } from './SliderWrapper';
 
 
-
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {

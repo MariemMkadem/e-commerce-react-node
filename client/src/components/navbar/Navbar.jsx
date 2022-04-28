@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {Center,Container,Input,Language,Left,Wrapper,MenuItem,Right,Logo,SearchContainer} from './NavbarWrapper';
 
+
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
   return (
